@@ -229,7 +229,7 @@ function! s:GetHeadingLinkMarked(headingName)
 endfunction
 
 function! s:GetHeadingLinkCommonMark(headingName)
-    let l:headingLink = tolower(a:headingName)
+    let l:headingLink = a:headingName
 
     let l:headingLink = substitute(l:headingLink, "[ ]*#*[ ]*$", "", "g")
     let l:headingLink = substitute(l:headingLink, "[ ]\\+", "%20", "g")
